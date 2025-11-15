@@ -1,3 +1,14 @@
-Create a program capabke of displaying questons to thje user like KBC.
-Use List data type to store the questions and their correct answers
-Display the final amount the person is taking homnme after playing the game.
+question = "Which planet is known as the Red Planet?"
+options = ["A. Earth", "B. Mars", "C. Jupiter", "D. Venus"]
+answer = "B"
+
+print(question)
+for opt in options:
+    print(opt)
+
+user = input("Your answer (A/B/C/D): ").upper()
+
+if user == answer:
+    print("Correct! You won ₹1000")
+else:
+    print("Wrong! The correct answer is", answer)
